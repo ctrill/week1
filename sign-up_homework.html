@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>The hAy-Team: A Farmer's of Fortune Fan Site</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">The Mission</a></li>
+				<li> <a href="#">The Reward</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you have a farming problem, if no one else can help, and if you can find them, maybe you can hire... the hAy-Team</h3>
+        <!-- A Simple Form    -->
+		<form id="sign-up" method="post" action="#" autocomplete="on">
+          <fieldset>
+            <h2>Do you need a plan to come together?</h2>
+            <h2>Create An Account</h2>
+            <ul>
+              <li>
+                <label for="user-name" >Username</label>
+                <input type="text" name="user-name" id="user-name" placeholder="User Name" required />               
+              </li>
+              <li>
+                <label for="password" >Password</label>
+                <input type="text" name="password" id="password" placeholder="Password" required autocomplete="off"/>                
+              </li>
+              <li>
+                <label>Phone Contact Number</label> 
+                (<input type="tel" size=3 maxlength="3" minlength="3" required placeholder="555">)
+                <input type="tel" size=3 maxlength="3" minlength="3" required placeholder="555"> 
+                <input type="tel" size=4 maxlength="4" minlength="4" placeholder="5555">
+              </li>
+              <li>
+                <label id="f-name-label">First Name</label><input type="text" name="first-name" placeholder="Your First Name" required />
+              </li>
+              <li>
+                <label id="l-name-label">Last Name</label><input type="text" name="last-name" placeholder="Your Last Name" required />
+              </li>
+              <li>
+                <label>Date of Birth Year</label>
+                <select name="year">
+                  <option value="1970">1970</option>
+                  <option value="1971">1971</option>
+                  <option value="1972">1972</option>
+                  <option value="1973">1973</option>
+                  <option value="1974">1974</option>
+                  <option value="1975">1975</option>
+                  <option value="1976">1976</option>
+                </select>
+              </li>
+              <li>
+                <label>Date of Birth Month</label>
+                <select name="day">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </li>
+              <li>
+                <label>Zip Code</label>
+                <input type="text" name="zip code" placeholder="12345" required pattern=[0-9]{5} maxlength="5" minlength="5" />
+              </li>
+              <li>
+                <label>E-mail Contact</label>
+                <input type="email" name="email" required placeholder="Enter a valid email address" autocomplete="off"/>
+              </li>
+              <li>
+                <label>Description of problem (Under 140 characters)</label>
+                <textarea placeholder="The tractors have become sentient.  The Sheep are afraid.  Please help!" maxlength="140" minlength="10"></textarea>
+              </li>
+              <li>
+                <label>Difficulty of problem</label>
+                <input type="range" size="2" name="satisfaction" min="1" max="5" value="3">
+              </li>
+              <li>
+                <label>Please enter a donation amount</label>
+                $<input type="number" value="100" max="100" min="5" placeholder="100" step="5" />
+              </li>
+            </ul>
+            <input type="submit" value="Submit" name="submit" />
+          </fieldset>
+        </form>
+        
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
